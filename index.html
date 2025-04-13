@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Excusify 💬</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Excusify 💬</h1>
+    <p>Your AI-powered excuse generator 😅</p>
+
+    <label for="situation">Choose a Situation:</label>
+    <select id="situation">
+      <option value="missing class">Missed Class</option>
+      <option value="not replying">Late Reply</option>
+      <option value="not doing homework">Didn’t Do Homework</option>
+      <option value="skipping a meetup">Can’t Attend an Event</option>
+      <option value="forgetting a birthday">Forgot Birthday</option>
+      <option value="custom">Custom Situation (type below)</option>
+    </select>
+
+    <input type="text" id="customSituation" placeholder="Enter your situation..." style="display:none"/>
+
+    <label for="style">Choose Excuse Style:</label>
+    <select id="style">
+      <option value="funny">Funny 😂</option>
+      <option value="believable">Believable 😇</option>
+      <option value="dramatic">Over-the-top 😵‍💫</option>
+      <option value="genz">Gen-Z Slang 💅</option>
+    </select>
+
+    <button onclick="generateExcuse()">Generate Excuse</button>
+
+    <div class="output-box">
+      <p id="excuse"></p>
+      <button onclick="copyExcuse()">📋 Copy</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
